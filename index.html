@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Word Learner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Chinese Flashcards</h1>
+        <div class="card" id="flashcard">
+            <div class="card-front">
+                <p class="character" id="chinese-word">你好</p>
+            </div>
+            <div class="card-back" id="card-answer">
+                <div class="image-container">
+                    <p class="loading-text" id="loading-message">Loading image...</p>
+                    <img src="" alt="Word image" id="word-image">
+                </div>
+                <p class="pinyin" id="pinyin">nǐ hǎo</p>
+                <p class="translation" id="translation">Hello</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="reveal-btn">Reveal Answer</button>
+            <button id="next-btn">Next Word</button>
+        </div>
+    </main>
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
